@@ -1,0 +1,13 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>First</title>
+</head>
+<body>
+    {{$num := .}}
+    <b>Square of {{$num }}: </b>{{square $num}}<br/>
+    <b>Square of doublet of {{$num }}: </b>{{$num |dbl | square  }}<br/>  
+    <b>Square root of Square of square of {{$num }}: </b>{{$num |square |square |sq  }}<br/>   
+</body>
+</html>
